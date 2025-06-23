@@ -7,34 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="description" content="Organização profissional personalizada em Gravataí, Canoas, POA e região. Cris Lino transforma seu lar com leveza, praticidade e estilo.">
+    <meta name="keywords" content="personal organizer, organização profissional, Gravataí, Porto Alegre, mudança, treinamento doméstico, organização definitiva, Cris Lino">
 </head>
 <body>
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content">
-            <img src="images/Logo.png" alt="Cris Lino - Personal Organizer" class="hero-logo">
-            <h1>Cris Lino <span class="gold">Personal Organizer</span></h1>
+        <div class="hero-content" data-aos="fade-up">
+            <img src="images/Logo.png" alt="Cris Lino - Personal Organizer" class="hero-logo hero-logo-full">
             <p class="slogan silver">Organização personalizada que transforma seu lar</p>
             <a href="https://wa.me/555184639257?text=Ol%C3%A1!%20Quero%20um%20atendimento%20personalizado." class="cta-button">Fale comigo</a>
         </div>
-        <div class="scroll-down">
+        <div class="scroll-down" data-aos="fade-down">
             <span>Desça para saber mais</span>
             <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="sobre" class="about">
-        <div class="container">
-            <h2>Sobre a Cris Lino</h2>
-            <div class="about-content" style="text-align:justify">
-                <p>Cris Lino é especialista em organização profissional residencial, com foco em soluções definitivas e personalizadas para transformar ambientes e facilitar a rotina dos clientes. Com olhar sensível, escuta atenta e profundo respeito pela história de cada lar, ela vai além da estética: entrega funcionalidade, leveza e praticidade no dia a dia. Sua metodologia garante que, após o processo, o próprio cliente consiga manter a organização com autonomia. Atende com excelência nas regiões de Gravataí, Cachoeirinha, Canoas, Esteio e Porto Alegre, oferecendo também consultorias e treinamentos para ajudantes do lar. Seu propósito é claro: tornar a organização acessível, real e duradoura – uma ferramenta de bem-estar que impacta diretamente na qualidade de vida.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Services Section -->
-    <section id="servicos" class="services">
+    <section id="servicos" class="services" data-aos="fade-up">
         <div class="container">
             <h2>Serviços</h2>
             <div class="services-grid">
@@ -61,8 +54,38 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="testimonials" data-aos="fade-up">
+      <div class="container">
+        <h2>O que dizem os clientes</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Depoimento 1 -->
+            <div class="swiper-slide testimonial-card">
+              <p>"A Cris transformou completamente meu apartamento! Agora tudo tem lugar e está fácil de manter. Obrigada!"</p>
+              <div class="stars">★★★★★</div>
+              <h4>Juliana, Gravataí</h4>
+            </div>
+            <!-- Depoimento 2 -->
+            <div class="swiper-slide testimonial-card">
+              <p>"O treinamento para minha ajudante foi essencial! Agora minha casa segue organizada todo dia."</p>
+              <div class="stars">★★★★★</div>
+              <h4>Patrícia, Canoas</h4>
+            </div>
+            <!-- Depoimento 3 -->
+            <div class="swiper-slide testimonial-card">
+              <p>"A Cris tem sensibilidade e talento! Me senti respeitada o tempo todo. Recomendo de olhos fechados."</p>
+              <div class="stars">★★★★★</div>
+              <h4>Marina, Porto Alegre</h4>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Service Areas Section -->
-    <section id="areas" class="areas">
+    <section id="areas" class="areas" data-aos="fade-up">
         <div class="container">
             <h2>Áreas de Atendimento</h2>
             <div class="areas-grid">
@@ -76,8 +99,18 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="sobre" class="about" data-aos="fade-up">
+        <div class="container">
+            <h2>Sobre a Cris Lino</h2>
+            <div class="about-content" style="text-align:justify">
+                <p>Cris Lino é especialista em organização profissional residencial, com foco em soluções definitivas e personalizadas para transformar ambientes e facilitar a rotina dos clientes. Com olhar sensível, escuta atenta e profundo respeito pela história de cada lar, ela vai além da estética: entrega funcionalidade, leveza e praticidade no dia a dia. Sua metodologia garante que, após o processo, o próprio cliente consiga manter a organização com autonomia. Atende com excelência nas regiões de Gravataí, Cachoeirinha, Canoas, Esteio e Porto Alegre, oferecendo também consultorias e treinamentos para ajudantes do lar. Seu propósito é claro: tornar a organização acessível, real e duradoura – uma ferramenta de bem-estar que impacta diretamente na qualidade de vida.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contato" class="contact">
+    <section id="contato" class="contact" data-aos="fade-up">
         <div class="container">
             <h2>Contato</h2>
             <div class="contact-bars">
@@ -110,5 +143,23 @@
         <i class="fab fa-whatsapp"></i>
     </a>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 20,
+        autoplay: {
+          delay: 5000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 </body>
 </html>

@@ -95,8 +95,20 @@ section {
 }
 
 .hero-logo {
-    max-width: 220px;
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.hero-logo-full {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .hero-logo-full {
+        max-width: 95vw;
+    }
 }
 
 .hero h1 {
@@ -234,10 +246,10 @@ section {
 }
 
 .service-card:hover {
-    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 2px 16px 0 rgba(212,175,55,0.10);
+    transform: translateY(-5px) scale(1.03);
     background: linear-gradient(90deg, var(--color-gold), var(--color-silver));
     color: var(--color-black);
-    box-shadow: 0 2px 16px 0 rgba(212,175,55,0.10);
 }
 
 .service-card i {
@@ -410,6 +422,66 @@ section {
     background: var(--color-gold);
     color: var(--color-black);
     transform: scale(1.08);
+}
+
+/* Swiper/Depoimentos */
+.testimonials {
+  background-color: #111;
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.swiper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 2.5rem;
+}
+.swiper-wrapper {
+  align-items: center;
+}
+.swiper-slide {
+  width: 100% !important;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.testimonial-card {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(135deg, #181818 80%, #d4af37 120%);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 0 18px 0 rgba(255, 215, 0, 0.18), 0 2px 16px 0 rgba(212,175,55,0.10);
+  border: 2px solid rgba(212,175,55,0.35);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.testimonial-card:hover {
+  box-shadow: 0 0 32px 0 #ffd70099, 0 2px 24px 0 #d4af3755;
+  border: 2.5px solid #FFD700;
+}
+.testimonials h2 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
+.stars {
+  color: #FFD700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #d4af37, 0 0 2px #fff;
 }
 
 /* Responsive Design */
