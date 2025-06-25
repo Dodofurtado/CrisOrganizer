@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cris Lino Personal Organizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
+    <!-- Google Ads Tracking -->
+    <!-- Global site tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-CONVERSION_ID');
+    </script>
+    
+    <meta name="description" content="Entre em contato com Cris Lino - Personal Organizer. Organização profissional personalizada em Gravataí, Canoas, Porto Alegre e região.">
+    <meta name="keywords" content="contato personal organizer, organização profissional, Gravataí, Porto Alegre, Cris Lino, whatsapp">
+    
+    <style>
+        /* Variáveis CSS */
+        :root {
+            --color-black: #1a1a1a;
+            --color-gold: #d4af37;
+            --color-silver: #c0c0c0;
+            --color-dark: #222222;
+            --color-light: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: var(--color-black);
+            overflow-x: hidden;
+        }
+
+        .contact-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--color-black) 0%, #2a2a2a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .contact-logo {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-title {
+            color: var(--color-gold);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .contact-subtitle {
+            color: var(--color-silver);
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 30px;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            gap: 15px;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-method::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .contact-method:hover::before {
+            left: 100%;
+        }
+        
+        .whatsapp-method {
+            background: linear-gradient(135deg, #25D366, #20b358);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-method:hover {
+            background: linear-gradient(135deg, var(--color-gold), #e6c247);
+            color: var(--color-black);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+        }
+        
+        .instagram-method {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            box-shadow: 0 8px 25px rgba(131, 58, 180, 0.3);
+        }
+        
+        .instagram-method:hover {
+            background: linear-gradient(135deg, var(--color-silver), #d4d4d4);
+            color: var(--color-black);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(192, 192, 192, 0.4);
+        }
+        
+        .contact-method i {
+            font-size: 1.8rem;
+        }
+        
+        .services-preview {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .services-preview h3 {
+            color: var(--color-gold);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            text-align: left;
+        }
+        
+        .service-item {
+            color: var(--color-silver);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-item i {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: var(--color-gold);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: 2px solid var(--color-gold);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: var(--color-gold);
+            color: var(--color-black);
+            transform: translateY(-2px);
+        }
+        
+        .urgency-banner {
+            background: linear-gradient(135deg, var(--color-gold), #e6c247);
+            color: var(--color-black);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Botão flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.3rem;
+            z-index: 999;
+            box-shadow: 0 4px 16px 0 rgba(0,0,0,0.18);
+            transition: background 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background: var(--color-gold);
+            color: var(--color-black);
+            transform: scale(1.08);
+        }
+
+        /* Animações */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-gold);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e6c247;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 30px 25px;
+            }
+            
+            .contact-title {
+                font-size: 2rem;
+            }
+            
+            .contact-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .services-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-page">
+        <div class="contact-container">
+            <img src="images/Logo.png" alt="Cris Lino - Personal Organizer" class="contact-logo">
+            
+            <h1 class="contact-title">Fale Conosco</h1>
+            <p class="contact-subtitle">
+                Transforme seu lar com organização profissional personalizada.<br>
+                Entre em contato e agende sua consultoria gratuita!
+            </p>
+            
+            <div class="urgency-banner">
+                <i class="fas fa-clock"></i>
+                Atendimento rápido e personalizado - Resposta em até 2 horas!
+            </div>
+            
+            <div class="contact-methods">
+                <a href="https://wa.me/555184639257?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20quero%20um%20atendimento%20personalizado." 
+                   class="contact-method whatsapp-method" 
+                   target="_blank"
+                   onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Conversar no WhatsApp</span>
+                </a>
+                
+                <a href="https://www.instagram.com/crislino_organizer?utm_source=ig_web_button_share_sheet&igsh=MW9ibG5qY3NhbnR0OQ==" 
+                   class="contact-method instagram-method" 
+                   target="_blank"
+                   onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/INSTAGRAM_CONVERSION_LABEL'});">
+                    <i class="fab fa-instagram"></i>
+                    <span>Seguir no Instagram</span>
+                </a>
+            </div>
+            
+            <div class="services-preview">
+                <h3>Nossos Serviços</h3>
+                <div class="services-list">
+                    <div class="service-item">
+                        <i class="fas fa-boxes"></i>
+                        <span>Organização pré e pós mudança</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-home"></i>
+                        <span>Organização definitiva de ambientes</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Consultoria personalizada</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Treinamento para ajudante do lar</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Voltar ao site principal
+            </a>
+        </div>
+    </div>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/555184639257?text=Ol%C3%A1!%20Vim%20do%20Google%20e%20quero%20um%20atendimento%20personalizado." 
+       class="whatsapp-float" 
+       target="_blank" 
+       title="Fale pelo WhatsApp"
+       onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Função para rastrear cliques nos métodos de contato
+        function trackContact(method) {
+            gtag('event', 'contact_click', {
+                'contact_method': method,
+                'page_location': window.location.href
+            });
+        }
+        
+        // Event listeners para tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track page view
+            gtag('event', 'page_view', {
+                'page_title': 'Página de Contato',
+                'page_location': window.location.href
+            });
+        });
+    </script>
+</body>
+</html>

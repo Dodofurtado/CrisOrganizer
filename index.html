@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/icon.png">
+    
     <meta name="description" content="Organização profissional personalizada em Gravataí, Canoas, POA e região. Cris Lino transforma seu lar com leveza, praticidade e estilo.">
     <meta name="keywords" content="personal organizer, organização profissional, Gravataí, Porto Alegre, mudança, treinamento doméstico, organização definitiva, Cris Lino">
 </head>
@@ -18,7 +24,7 @@
         <div class="hero-content" data-aos="fade-up">
             <img src="images/Logo.png" alt="Cris Lino - Personal Organizer" class="hero-logo hero-logo-full">
             <p class="slogan silver">Organização personalizada que transforma seu lar</p>
-            <a href="https://wa.me/555184639257?text=Ol%C3%A1!%20Quero%20um%20atendimento%20personalizado." class="cta-button">Fale comigo</a>
+            <a href="contato.html" class="cta-button">Fale comigo</a>
         </div>
         <div class="scroll-down" data-aos="fade-down">
             <span>Desça para saber mais</span>
@@ -61,22 +67,28 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <!-- Depoimento 1 -->
-            <div class="swiper-slide testimonial-card">
-              <p>"A Cris transformou completamente meu apartamento! Agora tudo tem lugar e está fácil de manter. Obrigada!"</p>
-              <div class="stars">★★★★★</div>
-              <h4>Juliana, Gravataí</h4>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p>"A Cris transformou completamente meu apartamento! Agora tudo tem lugar e está fácil de manter. Obrigada!"</p>
+                <div class="stars">★★★★★</div>
+                <h4>Juliana, Gravataí</h4>
+              </div>
             </div>
             <!-- Depoimento 2 -->
-            <div class="swiper-slide testimonial-card">
-              <p>"O treinamento para minha ajudante foi essencial! Agora minha casa segue organizada todo dia."</p>
-              <div class="stars">★★★★★</div>
-              <h4>Patrícia, Canoas</h4>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p>"O treinamento para minha ajudante foi essencial! Agora minha casa segue organizada todo dia."</p>
+                <div class="stars">★★★★★</div>
+                <h4>Patrícia, Canoas</h4>
+              </div>
             </div>
             <!-- Depoimento 3 -->
-            <div class="swiper-slide testimonial-card">
-              <p>"A Cris tem sensibilidade e talento! Me senti respeitada o tempo todo. Recomendo de olhos fechados."</p>
-              <div class="stars">★★★★★</div>
-              <h4>Marina, Porto Alegre</h4>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p>"A Cris tem sensibilidade e talento! Me senti respeitada o tempo todo. Recomendo de olhos fechados."</p>
+                <div class="stars">★★★★★</div>
+                <h4>Marina, Porto Alegre</h4>
+              </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -150,15 +162,34 @@
       const swiper = new Swiper(".mySwiper", {
         loop: true,
         slidesPerView: 1,
+        spaceBetween: 30,
         centeredSlides: true,
-        spaceBetween: 20,
         autoplay: {
           delay: 5000,
+          disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        effect: 'slide',
+        speed: 600,
+        grabCursor: true,
+        // Mesma configuração para todos os dispositivos
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          }
+        }
       });
     </script>
 </body>
